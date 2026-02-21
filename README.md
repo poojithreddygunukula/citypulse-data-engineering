@@ -87,10 +87,13 @@ This validates data completeness and ingestion accuracy.
 -> Schema consistency checks
 
 ## 🚀 How to Run This Project
-## 1️⃣ Clone Repository
 
+### 1️⃣ Clone the Repository
+
+```bash
 git clone git@github.com:poojithreddygunukula/citypulse-data-engineering.git
 cd citypulse-data-engineering
+```
 
 ## 2️⃣ Start PostgreSQL
 Ensure PostgreSQL is running.
