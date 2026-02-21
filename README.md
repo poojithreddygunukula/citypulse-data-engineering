@@ -74,10 +74,11 @@ SELECT
     COUNT(metric_value) AS non_null
 FROM analytics.city_metrics
 WHERE metric_name = 'congestion_level';
+```
 
 This validates data completeness and ingestion accuracy.
 
-**## 🔎 Data Validation Checks Performed**
+## 🔎 Data Validation Checks Performed
 
 -> Row count validation
 -> Null percentage checks
@@ -85,22 +86,22 @@ This validates data completeness and ingestion accuracy.
 -> Aggregation verification
 -> Schema consistency checks
 
-**## 🚀 How to Run This Project
-## 1️⃣ Clone Repository**
+## 🚀 How to Run This Project
+## 1️⃣ Clone Repository
 
 git clone git@github.com:poojithreddygunukula/citypulse-data-engineering.git
 cd citypulse-data-engineering
 
-**## 2️⃣ Start PostgreSQL**
+## 2️⃣ Start PostgreSQL
 Ensure PostgreSQL is running.
 
-**## 3️⃣ Connect to Database**
+## 3️⃣ Connect to Database
 psql -d citypulse
 
-**## 4️⃣ Run SQL Scripts**
+## 4️⃣ Run SQL Scripts
 Execute schema creation and data load scripts inside psql.
 
-**## 🧠 What This Project Demonstrates**
+## 🧠 What This Project Demonstrates
 
 ✔ Data modeling
 ✔ SQL analytics
@@ -109,7 +110,7 @@ Execute schema creation and data load scripts inside psql.
 ✔ SSH-based GitHub authentication
 ✔ End-to-end data validation
 
-**## 📈 Future Improvements**
+## 📈 Future Improvements
 
 - Deploy PostgreSQL to Google Cloud SQL
 - Store raw data in Google Cloud Storage
@@ -124,7 +125,7 @@ Execute schema creation and data load scripts inside psql.
 - Implement incremental data loading strategy
 - Add partitioning & clustering for BigQuery optimization
 
-**## 👨‍💻 Author**
+## 👨‍💻 Author
 
 Poojith Reddy Gunukula
 Data Engineering Enthusiast
