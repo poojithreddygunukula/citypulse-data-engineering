@@ -1,0 +1,43 @@
+port psycopg2
+import pandas as pd
+
+DB_NAME = "citypulse"
+DB_USER = "postgres"
+DB_PASSWORD = ""
+DB_HOST = "localhost"
+DB_PORT = "5432"
+
+CSV_PATH = "data/city_events.csv"
+
+def ingest():
+    df = pd.read_csv(CSV_PATH)
+
+    conn = psycopg2.connect(
+        dbname="citypulse",
+        user="postgres",
+        password="",
+        host="localhost",
+        port="5432"
+    )
+
+    cur = conn.cursor()
+
+    for _, row in df.iterrows():
+        cur.execute(
+            """
+            INSERT INTO city_events_raw
+            (event_time, event_type, location, value)
+            VALUES (%s, %s, %s, %s)
+            """,
+            (row["event_time"], row["event_type"], row["location"], row["value"])
+        )
+
+    conn.commit()
+    cur.close()
+    conn.close()
+
+    print("Raw ingestion complete")
+
+if __name__ == "__main__":
+    ingest()
+
