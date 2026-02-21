@@ -106,12 +106,12 @@ Execute schema creation and data load scripts inside psql.
 
 ## 🧠 What This Project Demonstrates
 
-✔ Data modeling
-✔ SQL analytics
-✔ Production-style project structure
-✔ Git version control
-✔ SSH-based GitHub authentication
-✔ End-to-end data validation
+- ✔ Data modeling  
+- ✔ SQL analytics  
+- ✔ Production-style project structure  
+- ✔ Git version control  
+- ✔ SSH-based GitHub authentication  
+- ✔ End-to-end data validation  
 
 ## 📈 Future Improvements
 
