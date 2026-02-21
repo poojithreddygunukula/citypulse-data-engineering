@@ -130,7 +130,7 @@ Execute schema creation and data load scripts inside psql.
 
 ## 👨‍💻 Author
 
-Poojith Reddy Gunukula
-Data Engineering Enthusiast
+- Poojith Reddy Gunukula
+- Data Engineering Enthusiast
 
 GitHub: https://github.com/poojithreddygunukula
